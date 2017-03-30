@@ -15,6 +15,6 @@ public class IntegerDemo
 		System.out.println("The byte is " + aByte);
 		System.out.println("The short is " + aShort);
 		System.out.println("The long is " + aLong);
-		System.out.println("Another int is " + anotherInt);
+		System.out.println("Another int is " + anInt);
 	}
 }
