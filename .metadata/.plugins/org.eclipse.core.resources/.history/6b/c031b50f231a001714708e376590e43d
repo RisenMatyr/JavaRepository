@@ -1,0 +1,21 @@
+package examples;
+import java.util.Scanner;
+public class EggsDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		String eggsWanted;
+		int  eggsLeft, dozenEggs;
+		
+		Scanner inputDevice = new Scanner(System.in);
+		
+		double dozenTotal, singlePrice;
+		double dozenPrice = 2.00;
+		
+		System.out.println("How many eggs you want >> ");
+		eggsWanted = inputDevice.nextLine();
+	}
+
+}

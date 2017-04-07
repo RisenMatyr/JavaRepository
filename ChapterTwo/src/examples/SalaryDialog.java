@@ -5,7 +5,7 @@ public class SalaryDialog {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String wageString, dependentsString;
-		double wage, weeklyPay;
+		double weeklyPay;
 		int dependents;
 		final double HOURS_IN_WEEK = 37.5;
 		wageString = JOptionPane.showInputDialog(null, "Enter employee's hourly wage", "Salary dialog 1", JOptionPane.INFORMATION_MESSAGE);
