@@ -18,7 +18,7 @@ public class page134
 		commRate = inputDevice.nextDouble();
 		
 		System.out.print("Please enter car type >> ");
-		vType = inputDevice.next().charAt(0);
+		vType = (char) inputDevice.nextInt();
 		
 		computeCommission(value,commRate, vType);
 		computeCommission(40000, 0.10, 'L');

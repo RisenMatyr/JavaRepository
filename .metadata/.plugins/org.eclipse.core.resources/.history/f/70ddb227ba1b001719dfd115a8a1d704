@@ -1,25 +1,14 @@
 package methodConstruction;
-import java.util.Scanner;
+
 public class page134 
 {
 
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		Scanner inputDevice = new Scanner(System.in);
-		char vType;
-		int value;
-		double commRate;
-		
-		System.out.print("Please enter value >> ");
-		value = inputDevice.nextInt();
-		
-		System.out.print("Please enter commission rate >> ");
-		commRate = inputDevice.nextDouble();
-		
-		System.out.print("Please enter car type >> ");
-		vType = inputDevice.next().charAt(0);
-		
+		char vType = 'S';
+		int value = 23000;
+		double commRate = 0.08;
 		computeCommission(value,commRate, vType);
 		computeCommission(40000, 0.10, 'L');
 	}

@@ -7,18 +7,12 @@ public class page134
 	{
 		// TODO Auto-generated method stub
 		Scanner inputDevice = new Scanner(System.in);
-		char vType;
+		char vType = 'S';
 		int value;
-		double commRate;
+		double commRate = 0.08;
 		
 		System.out.print("Please enter value >> ");
 		value = inputDevice.nextInt();
-		
-		System.out.print("Please enter commission rate >> ");
-		commRate = inputDevice.nextDouble();
-		
-		System.out.print("Please enter car type >> ");
-		vType = inputDevice.next().charAt(0);
 		
 		computeCommission(value,commRate, vType);
 		computeCommission(40000, 0.10, 'L');
