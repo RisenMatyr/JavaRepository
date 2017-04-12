@@ -37,7 +37,7 @@ public class DelgadosTacos {
 			@SuppressWarnings("resource")
 			Scanner inputDevice = new Scanner(System.in);
 
-			System.out.println("Welcome to Delgados Tacos, where we will force our food down your\nthroat and steal your money.\n");
+			System.out.println("Welcome to Delgados Tacos, where we will force our food down your\n throat and steal your money.\n");
 			System.out.println("MAKE your choice between taco, burrito, drink, tamale, tostado,\nenchiliada, churro, quesadilla, chimichanga, and chalupa.");
 			String choice= inputDevice.nextLine();
 			
@@ -49,7 +49,7 @@ public class DelgadosTacos {
 				tacoTotal = tacoOrdered * tacoPrice;
 				total = tacoTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet." + taxRate);
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("burrito") || choice.equals("Burrito")){
@@ -60,7 +60,7 @@ public class DelgadosTacos {
 				burritoTotal = burritoOrdered * burritoPrice;
 				total = burritoTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("soda") || choice.equals("Soda")){
@@ -71,7 +71,7 @@ public class DelgadosTacos {
 				drinkTotal = drinkOrdered * drinkPrice;
 				total = drinkTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("tamale") || choice.equals("Tamale")){
@@ -82,7 +82,7 @@ public class DelgadosTacos {
 				tamaleTotal = tamaleOrdered * tamalePrice;
 				total = tamaleTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("tostado") || choice.equals("Tostado")){
@@ -93,7 +93,7 @@ public class DelgadosTacos {
 				tostadoTotal = tostadoOrdered * tostadoPrice;
 				total = tostadoTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("enchilada") || choice.equals("Enchilada")){
@@ -104,7 +104,7 @@ public class DelgadosTacos {
 				enchiladaTotal = enchiladaOrdered * enchiladaPrice;
 				total = enchiladaTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("churro") || choice.equals("Churro")){
@@ -115,7 +115,7 @@ public class DelgadosTacos {
 				churroTotal = churroOrdered * churroPrice;
 				total = churroTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("quesadilla") || choice.equals("Quesadilla")){
@@ -126,7 +126,7 @@ public class DelgadosTacos {
 				quesadillaTotal = quesadillaOrdered * quesadillaPrice;
 				total = quesadillaTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("chimichanga") || choice.equals("Chimichanga")){
@@ -137,7 +137,7 @@ public class DelgadosTacos {
 				chimichangaTotal = chimichangaOrdered * chimichangaPrice;
 				total = chimichangaTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 			
 			else if(choice.equals("chalupa") || choice.equals("Chalupa")){
@@ -148,17 +148,8 @@ public class DelgadosTacos {
 				chalupaTotal = chalupaOrdered * chalupaPrice;
 				total = chalupaTotal * taxRate;
 				
-				System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+				System.out.println("You're missing " + df.format(total) + "$ from you're wallet. Come again!");
 			}
 		}
 	}
-//	public static void taxRate(double total)
-//	{
-//		double totalWithTax;
-//		DecimalFormat df = new DecimalFormat();
-//		df.setMaximumFractionDigits(2);
-//		final double TAX_RATE = 1.075;
-//		totalWithTax = total * TAX_RATE;
-//		System.out.println("Total with tax is " + df.format(totalWithTax));
-//	}
 }

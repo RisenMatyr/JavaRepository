@@ -9,14 +9,14 @@ public class DebugTwo
 	      add(b, c);
 	      subtract(c, a);            
 	   }
-	   public static void add(double a, double  b)
+	   public static void add(int a, int  b)
 	   {
 	      System.out.println("The sum of " + a +
 	         " and " + b + " is " + (a + b));
 	   }
-	   public static void subtract(double c, double a)
+	   public static void subtract(int a, int b)
 	   {
 	      System.out.println("The difference between " +
-	        c + " and " + a + " is " +  (c - a));
+	        a + " and " + b + " is " +  (a - b));
 	   }
 }

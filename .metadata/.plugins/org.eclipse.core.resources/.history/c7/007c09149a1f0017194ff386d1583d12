@@ -152,13 +152,13 @@ public class DelgadosTacos {
 			}
 		}
 	}
-//	public static void taxRate(double total)
-//	{
-//		double totalWithTax;
-//		DecimalFormat df = new DecimalFormat();
-//		df.setMaximumFractionDigits(2);
-//		final double TAX_RATE = 1.075;
-//		totalWithTax = total * TAX_RATE;
-//		System.out.println("Total with tax is " + df.format(totalWithTax));
-//	}
+	public static void taxRate(double total)
+	{
+		double totalWithTax;
+		DecimalFormat df = new DecimalFormat();
+		df.setMaximumFractionDigits(2);
+		final double TAX_RATE = 1.075;
+		totalWithTax = total * TAX_RATE;
+		System.out.println("Total with tax is " + df.format(totalWithTax));
+	}
 }

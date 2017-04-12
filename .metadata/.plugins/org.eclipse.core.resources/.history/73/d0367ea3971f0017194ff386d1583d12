@@ -6,7 +6,6 @@ public class page134
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		@SuppressWarnings("resource")
 		Scanner inputDevice = new Scanner(System.in);
 		char vType;
 		int value;

@@ -10,8 +10,7 @@ public class DebugThree {
 	   public static String getName()
 	   {
 	      String name;
-	      @SuppressWarnings("resource")
-		Scanner inputDevice = new Scanner(System.in);
+	      Scanner inputDevice = new Scanner(System.in);
 	      System.out.print("Enter name ");
 	      name = inputDevice.nextLine();
 	      return name;
