@@ -1,5 +1,4 @@
 package youDoIt;
-import java.util.Scanner;
 public class paradiseInfo 
 {
 	

@@ -10,9 +10,9 @@ public class DebugThree {
 	   public static String getName()
 	   {
 	      String name;
-	      Scanner input = new Scanner(System.in);
+	      Scanner inputDevice = new Scanner(System.in);
 	      System.out.print("Enter name ");
-	      name = input.nextLine();
+	      name = inputDevice.nextLine();
 	      return name;
 	   }
 	   public static void displayGreeting(String name)

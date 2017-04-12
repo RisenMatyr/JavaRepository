@@ -1,0 +1,156 @@
+package delgadosTaco;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class DelgadosTacos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		{
+			double tacoPrice = 1.50;
+			double burritoPrice = 2.00;
+			double drinkPrice = 1.50;
+			double tamalePrice = 2.00;
+			double tostadoPrice = 3.00;
+			double enchiladaPrice = 3.00;
+			double churroPrice = 0.50;
+			double quesadillaPrice = 2.50;
+			double chimichangaPrice = 1.50;
+			double chalupaPrice = 2.50;
+			double taxRate = 1.075;
+			double tacoOrdered = 0, tacoTotal = 0;
+			double burritoOrdered = 0, burritoTotal = 0;
+			double drinkOrdered = 0, drinkTotal = 0;
+			double tamaleOrdered = 0, tamaleTotal = 0;
+			double tostadoOrdered = 0, tostadoTotal = 0;	
+			double enchiladaOrdered = 0, enchiladaTotal = 0;
+			double churroOrdered = 0, churroTotal = 0;
+			double quesadillaOrdered = 0 , quesadillaTotal = 0;
+			double chimichangaOrdered = 0, chimichangaTotal = 0;
+			double chalupaOrdered = 0, chalupaTotal = 0;
+			double total = 0;
+			
+			DecimalFormat df = new DecimalFormat();
+			df.setMaximumFractionDigits(2);
+			System.out.println(df.format(total));
+			
+			@SuppressWarnings("resource")
+			Scanner inputDevice = new Scanner(System.in);
+
+			System.out.println("Welcome to Delgados Tacos, where we will force our food down your throat and steal your money.\n");
+			System.out.println("MAKE your choice between taco, burrito, drink, tamale, tostado,\nenchiliada, churro, quesadilla, chimichanga, and chalupa.\n\n");
+			String choice= inputDevice.nextLine();
+			
+			if(choice.equals("taco") || choice.equals("Taco")){
+				//Check if user inputs taco as their desired command then asks how many they desire
+				System.out.println("You're going to be force fed this many tacos down your throat: ");
+				tacoOrdered = inputDevice.nextInt();
+				
+				tacoTotal = tacoOrdered * tacoPrice;
+				total = tacoTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("burrito") || choice.equals("Burrito")){
+				//Check if user inputs burrito as their desired command then asks how many they desire
+				System.out.println("Then we're going to shove this many burritos down your throat: ");
+				burritoOrdered = inputDevice.nextInt();
+				
+				burritoTotal = burritoOrdered * burritoPrice;
+				total = burritoTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("soda") || choice.equals("Soda")){
+				//Check if user inputs soda as their desired command then asks how many they desire
+				System.out.println("Than you're going to choke on this many sodas: ");
+				drinkOrdered = inputDevice.nextInt();
+				
+				drinkTotal = drinkOrdered * drinkPrice;
+				total = drinkTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("tamale") || choice.equals("Tamale")){
+				//Check if user inputs tamale as their desired command then asks how many they desire
+				System.out.println("We're going to jam this many tamales into your mouth: ");
+				tamaleOrdered = inputDevice.nextInt();
+				
+				tamaleTotal = tamaleOrdered * tamalePrice;
+				total = tamaleTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("tostado") || choice.equals("Tostado")){
+				//Check if user inputs tostado as their desired command then asks how many they desire
+				System.out.println("Your're going to suffer through this many tostados: ");
+				tostadoOrdered = inputDevice.nextInt();
+				
+				tostadoTotal = tostadoOrdered * tostadoPrice;
+				total = tostadoTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("enchilada") || choice.equals("Enchilada")){
+				//Check if user inputs enchilada as their desired command then asks how many they desire
+				System.out.println("We'll attack you with this many enchiladas: ");
+				enchiladaOrdered = inputDevice.nextInt();
+				
+				enchiladaTotal = enchiladaOrdered * enchiladaPrice;
+				total = enchiladaTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("churro") || choice.equals("Churro")){
+				//Check if user inputs churro as their desired command then asks how many they desire
+				System.out.println("You can fit this many churros in your mouth at once: ");
+				churroOrdered = inputDevice.nextInt();
+				
+				churroTotal = churroOrdered * churroPrice;
+				total = churroTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("quesadilla") || choice.equals("Quesadilla")){
+				//Check if user inputs quesadilla as their desired command then asks how many they desire
+				System.out.println("You will choke on this many quesadillas: ");
+				quesadillaOrdered = inputDevice.nextInt();
+				
+				quesadillaTotal = quesadillaOrdered * quesadillaPrice;
+				total = quesadillaTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("chimichanga") || choice.equals("Chimichanga")){
+				//Check if user inputs chimicanga as their desired command then asks how many they desire
+				System.out.println("I'm running out of things to say... \n How many chimichangas did you want?: ");
+				chimichangaOrdered = inputDevice.nextInt();
+				
+				chimichangaTotal = chimichangaOrdered * chimichangaPrice;
+				total = chimichangaTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+			
+			else if(choice.equals("chalupa") || choice.equals("Chalupa")){
+				//Check if user inputs chalupa as their desired command then asks how many they desire
+				System.out.println("Finally how many chalupas did you want?: ");
+				chalupaOrdered = inputDevice.nextInt();
+				
+				chalupaTotal = chalupaOrdered * chalupaPrice;
+				total = chalupaTotal * taxRate;
+				
+				System.out.println("You're missing " + total + "$ from you're wallet. Come again!");
+			}
+		}
+	}
+}
