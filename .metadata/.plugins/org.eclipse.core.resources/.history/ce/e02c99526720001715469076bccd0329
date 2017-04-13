@@ -156,6 +156,15 @@ public class DelgadosTacos {
 			total = chalupaTotal * taxRate;
 			
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
-		}
+		
 	}
+//	public static void taxRate(double total)
+//	{
+//		double totalWithTax;
+//		DecimalFormat df = new DecimalFormat();
+//		df.setMaximumFractionDigits(2);
+//		final double TAX_RATE = 1.075;
+//		totalWithTax = total * TAX_RATE;
+//		System.out.println("Total with tax is " + df.format(totalWithTax));
+//	}
 }

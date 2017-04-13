@@ -1,6 +1,6 @@
 package debugging;
 
-public class Debug1 {
+public class DebugFour {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
