@@ -6,6 +6,7 @@ public class ParadiseInfoTwo {
 		double price;
 		double discount;
 		double savings;
+		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("Enter cutoff price for discount >>");

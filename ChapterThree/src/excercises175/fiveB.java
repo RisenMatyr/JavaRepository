@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class fiveB {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner inputDevice = new Scanner(System.in);
 		// TODO Auto-generated method stub
 		double num1 = 0;
@@ -20,7 +21,7 @@ public class fiveB {
 	}
 	public static void computePercent(double num1, double num2)
 	{
-		System.out.println(num1 + " is the percent of " + num2 + " = " + (num1 / num2));
+		System.out.println((num1 / num2) + " is the percent of " + num1 + " and " + num2);
 	}
 
 }

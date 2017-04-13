@@ -9,6 +9,7 @@ public class CreateSpaServices {
 		
 		spaService firstService = new spaService();
 		spaService secondService = new spaService();
+		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("Enter service >> ");
