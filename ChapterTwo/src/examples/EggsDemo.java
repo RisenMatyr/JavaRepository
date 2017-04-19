@@ -9,6 +9,7 @@ public class EggsDemo
 		int  eggsLeft, dozenEggs;
 		int eggsWanted;
 		
+		@SuppressWarnings("resource")
 		Scanner inputDevice = new Scanner(System.in);
 		
 		double dozenTotal, singlePrice;

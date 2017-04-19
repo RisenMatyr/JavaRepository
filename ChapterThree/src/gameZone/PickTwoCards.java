@@ -19,6 +19,7 @@ public class PickTwoCards {
 		
 		System.out.println("My card is the " + myCard.getValue() + " of " + myCard.getSuit());
 		System.out.println("Your card is the " + yourCard.getValue() + " of " + yourCard.getSuit());
+		
 	}
 
 }

@@ -12,6 +12,7 @@ public class ArithmeticDemo
 		int difference;
 		int average;
 		
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Please enter an integer >> ");

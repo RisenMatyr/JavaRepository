@@ -7,6 +7,7 @@ public class GetUserInfo
 		// TODO Auto-generated method stub
 		String name;
 		int age;
+		@SuppressWarnings("resource")
 		Scanner inputDevice = new Scanner(System.in);
 		System.out.print("Please enter your name >> ");
 		name = inputDevice.nextLine();
