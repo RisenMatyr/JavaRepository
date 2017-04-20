@@ -29,8 +29,10 @@ public class RockPaperScissors {
 		    
 		    if(buttons.equals("Rock"))
 		    {
-		    
-		    }
+		    if(n == 3)
+		    {
+		    	win = win + 1;
+		    }else
 		    
 		} while (game < 10);
 		

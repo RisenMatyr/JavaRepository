@@ -3,9 +3,27 @@ package delgadosTaco;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class DelgadosTacos {
-
-	public static void menu()
+public class DelgadosTacos 
+{
+	
+	public static void main(String[] args)
+	{
+		truck();
+		choice();
+	}
+	
+	
+	public static void truck()
+	{
+		System.out.println("			  __________________       " );
+		System.out.println("	()		 | .-----..--..----.|      ");
+		System.out.println("		()	 |)[_____][__][___](|      ");
+		System.out.println("		()	 |   _   |   -|-    |_____");
+	    System.out.println("		 ()	 |(   .  |    |   .   |[) |");
+	    System.out.println("			 `----(_)-----------(_)---'");
+	}
+	
+	public static void choice()
 	{
 		double tacoPrice = 1.50;
 		double burritoPrice = 2.00;
@@ -38,17 +56,11 @@ public class DelgadosTacos {
 
 		System.out.println("Welcome to Delgados Tacos, where we will force our food down your\nthroat and steal your money.");
 		
-		System.out.println("			  __________________       " );
-		System.out.println("	()		 | .-----..--..----.|      ");
-		System.out.println("		()	 |)[_____][__][___](|      ");
-		System.out.println("		()	 |   _   |   -|-    |_____");
-	    System.out.println("		 ()	 |(   .  |    |   .   |[) |");
-	    System.out.println("			 `----(_)-----------(_)---'");
-		
 		System.out.println("MAKE your choice between taco, burrito, drink, tamale, tostado,\nenchiliada, churro, quesadilla, chimichanga, and chalupa.");
 		String choice= inputDevice.nextLine();
 		
-		if(choice.equals("taco") || choice.equals("Taco")){
+		if(choice.equals("taco") || choice.equals("Taco"))
+		{
 			//Check if user inputs taco as their desired command then asks how many they desire
 			System.out.println("You're going to be force fed this many tacos down your throat: ");
 			tacoOrdered = inputDevice.nextInt();
@@ -56,10 +68,11 @@ public class DelgadosTacos {
 			tacoTotal = tacoOrdered * tacoPrice;
 			total = tacoTotal * taxRate;
 			
-			System.out.println("You're missing " + df.format(total) + "$ from you're wallet." + taxRate);
+			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("burrito") || choice.equals("Burrito")){
+		else if(choice.equals("burrito") || choice.equals("Burrito"))
+		{
 			//Check if user inputs burrito as their desired command then asks how many they desire
 			System.out.println("Then we're going to shove this many burritos down your throat: ");
 			burritoOrdered = inputDevice.nextInt();
@@ -70,7 +83,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("soda") || choice.equals("Soda")){
+		else if(choice.equals("soda") || choice.equals("Soda"))
+		{
 			//Check if user inputs soda as their desired command then asks how many they desire
 			System.out.println("Than you're going to choke on this many sodas: ");
 			drinkOrdered = inputDevice.nextInt();
@@ -81,7 +95,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("tamale") || choice.equals("Tamale")){
+		else if(choice.equals("tamale") || choice.equals("Tamale"))
+		{
 			//Check if user inputs tamale as their desired command then asks how many they desire
 			System.out.println("We're going to jam this many tamales into your mouth: ");
 			tamaleOrdered = inputDevice.nextInt();
@@ -92,7 +107,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("tostado") || choice.equals("Tostado")){
+		else if(choice.equals("tostado") || choice.equals("Tostado"))
+		{
 			//Check if user inputs tostado as their desired command then asks how many they desire
 			System.out.println("Your're going to suffer through this many tostados: ");
 			tostadoOrdered = inputDevice.nextInt();
@@ -103,7 +119,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("enchilada") || choice.equals("Enchilada")){
+		else if(choice.equals("enchilada") || choice.equals("Enchilada"))
+		{
 			//Check if user inputs enchilada as their desired command then asks how many they desire
 			System.out.println("We'll attack you with this many enchiladas: ");
 			enchiladaOrdered = inputDevice.nextInt();
@@ -114,7 +131,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("churro") || choice.equals("Churro")){
+		else if(choice.equals("churro") || choice.equals("Churro"))
+		{
 			//Check if user inputs churro as their desired command then asks how many they desire
 			System.out.println("You can fit this many churros in your mouth at once: ");
 			churroOrdered = inputDevice.nextInt();
@@ -125,7 +143,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("quesadilla") || choice.equals("Quesadilla")){
+		else if(choice.equals("quesadilla") || choice.equals("Quesadilla"))
+		{
 			//Check if user inputs quesadilla as their desired command then asks how many they desire
 			System.out.println("You will choke on this many quesadillas: ");
 			quesadillaOrdered = inputDevice.nextInt();
@@ -136,7 +155,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("chimichanga") || choice.equals("Chimichanga")){
+		else if(choice.equals("chimichanga") || choice.equals("Chimichanga"))
+		{
 			//Check if user inputs chimichanga as their desired command then asks how many they desire
 			System.out.println("I'm running out of things to say... \n How many chimichangas did you want?: ");
 			chimichangaOrdered = inputDevice.nextInt();
@@ -147,7 +167,8 @@ public class DelgadosTacos {
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
 		}
 		
-		else if(choice.equals("chalupa") || choice.equals("Chalupa")){
+		else if(choice.equals("chalupa") || choice.equals("Chalupa"))
+		{
 			//Check if user inputs chalupa as their desired command then asks how many they desire
 			System.out.println("Finally how many chalupas did you want?: ");
 			chalupaOrdered = inputDevice.nextInt();
@@ -156,6 +177,25 @@ public class DelgadosTacos {
 			total = chalupaTotal * taxRate;
 			
 			System.out.println("You're missing " + df.format(total) + "$ from you're wallet.");
+		}
+		
+		@SuppressWarnings("resource")
+		Scanner inputDevice2 = new Scanner(System.in);
+		
+		System.out.println("Would you like to order something else?");
+		String more= inputDevice2.nextLine();
+		
+		
+		if(more.equals("yes") || more.equals("Yes"))
+		{
+			do {
+				choice();
+			} while (more.equals("yes"));
+		}
+		else if(more.equals("no") || more.equals("No"))
+		{
+			System.out.println("Get out of my sight!");
+			System.exit(0);
 		}
 	}
 }
