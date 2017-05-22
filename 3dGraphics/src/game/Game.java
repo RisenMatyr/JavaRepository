@@ -1,7 +1,9 @@
 package game;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Toolkit;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
@@ -9,7 +11,12 @@ import java.util.ArrayList;
 
 import javax.swing.JFrame;
 
-public class Game extends JFrame implements Runnable{
+public class Game extends JFrame implements Runnable
+{
+	
+	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+	int width = (int) screenSize.getWidth();
+	int height = (int) screenSize.getHeight();
 	
 	private static final long serialVersionUID = 1L;
 	public int mapWidth = 15;
@@ -33,13 +40,14 @@ public class Game extends JFrame implements Runnable{
 			{1,0,0,0,0,0,0,0,2,0,0,0,0,0,2},
 			{1,1,1,1,1,1,1,1,4,4,4,0,4,4,4},
 			{1,0,0,0,0,0,1,4,0,0,0,0,0,0,4},
-			{1,0,1,1,0,0,1,4,0,0,0,0,0,0,4},
-			{1,0,1,1,0,0,1,4,0,3,3,3,3,0,4},
+			{1,0,0,0,0,0,1,4,0,0,0,0,0,0,4},
+			{1,0,0,0,0,0,1,4,0,3,3,3,3,0,4},
 			{1,0,0,0,0,0,1,4,0,3,3,3,3,0,4},
 			{1,0,0,0,0,0,0,0,0,0,0,0,0,0,4},
 			{1,1,1,1,1,1,1,4,4,4,4,4,4,4,4}
 		};
-	public Game() {
+	public Game() 
+	{
 		thread = new Thread(this);
 		image = new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
 		pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
@@ -60,21 +68,27 @@ public class Game extends JFrame implements Runnable{
 		setVisible(true);
 		start();
 	}
-	private synchronized void start() {
+	private synchronized void start() 
+	{
 		running = true;
 		thread.start();
 	}
-	public synchronized void stop() {
+	public synchronized void stop() 
+	{
 		running = false;
-		try {
+		try 
+		{
 			thread.join();
-		} catch(InterruptedException e) {
+		} catch(InterruptedException e) 
+		{
 			e.printStackTrace();
 		}
 	}
-	public void render() {
+	public void render() 
+	{
 		BufferStrategy bs = getBufferStrategy();
-		if(bs == null) {
+		if(bs == null) 
+		{
 			createBufferStrategy(3);
 			return;
 		}
@@ -82,12 +96,14 @@ public class Game extends JFrame implements Runnable{
 		g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
 		bs.show();
 	}
-	public void run() {
+	public void run() 
+	{
 		long lastTime = System.nanoTime();
 		final double ns = 1000000000.0 / 60.0;//60 times per second
 		double delta = 0;
 		requestFocus();
-		while(running) {
+		while(running) 
+		{
 			long now = System.nanoTime();
 			delta = delta + ((now-lastTime) / ns);
 			lastTime = now;
@@ -101,7 +117,9 @@ public class Game extends JFrame implements Runnable{
 			render();//displays to the screen unrestricted time
 		}
 	}
-	public static void main(String [] args) {
+	public static void main(String [] args) 
+	{
+		
 		@SuppressWarnings("unused")
 		Game game = new Game();
 	}
